@@ -36,6 +36,36 @@ header {
 	left: 450px;
 }
 
+.product {
+	width: 48em;
+    margin: 0 auto;
+    font-size: 44px;
+    /* white-space determina como se maneja el espacio en blanco dentro de un elemento */
+    white-space: nowrap;
+    /*hidden lo que haya fuera del contenedor no se vea ni se genere un scroll  */
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.linea-uno{
+	animation: mi-animacion 4s;
+}
+
+
+@keyframes mi-animacion {
+    from {
+        width: 0;
+        border-right-color: rgba(255, 255, 255, 75);
+    }
+    to {
+        width: 48em;
+        border-right-color: red;
+    }
+    
+}
+
+
+
 li {
 	position: relative;
 	display: inline-block;
