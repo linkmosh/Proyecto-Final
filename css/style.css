@@ -21,7 +21,7 @@ header {
 	display: inline-block;
 	left: 20px;
 }
-
+/* Buscador */
 #searchform {
 	position: relative;
 	display: inline-block;
@@ -29,28 +29,22 @@ header {
 	padding: 0px 50px 10px 10px;
 
 }
-
+/* Carrito de Compras */
 #carrito {
 	position: relative;
 	display: inline-block;
 	left: 450px;
 }
-
-.product {
+/* Inicio de Animacion en Menu */
+.menu-animado {
 	width: 48em;
     margin: 0 auto;
     font-size: 44px;
-    /* white-space determina como se maneja el espacio en blanco dentro de un elemento */
     white-space: nowrap;
-    /*hidden lo que haya fuera del contenedor no se vea ni se genere un scroll  */
     overflow: hidden;
     transform: translateY(-50%);
+	animation: mi-animacion 3s;
 }
-
-.linea-uno{
-	animation: mi-animacion 4s;
-}
-
 
 @keyframes mi-animacion {
     from {
@@ -64,7 +58,7 @@ header {
     
 }
 
-
+/* Fin de Animacion de Menu */
 
 li {
 	position: relative;
