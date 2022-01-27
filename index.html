@@ -6,105 +6,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Archivo CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Titulo Pagina Principal -->
     <title>Pagina Principal Proyecto Final</title>
+    <!--CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="color-fondo-principal">
     <!-- Inicio de Cabecera -->
     <header>
-        <!--Logo de la pagina-->
-        <a href="index.html"><img class="logo" src="imagenes/Logo_PP_V5.png" width="200" height="50" alt="Logo Pagina Principal"></a>
-        <!-- Buscador de Palabras Clave-->
-        <div class="field" id="searchform">
-            <input type="text" id="searchterm" placeholder="Que estas buscando?" />
-            <button type="button" id="search">Buscar!</button>
-        </div>
-        <!-- Carrito de Compras -->
-        <img id="carrito" width="35" height="35" src="imagenes/Carrito_Compras.png" alt="Carrito de Compras">
-        <!-- Zona Navegable -->
-        <nav>
-            <!-- Opciones de Menu + Animacion-->
-            <ul class="menu-animado">
-                <li><a href="../Proyecto_Final_V2/pages/Productos.html">Productos</a></li>
-                <li><a href="../Proyecto_Final_V2/pages/Ofertas.html">Ofertas</a></li>
-                <li><a href="../Proyecto_Final_V2/pages/Servicios.html">Servicios</a></li>
-                <li><a href="../Proyecto_Final_V2/pages/Outlet.html">Outlet</a></li>
-                <li><a href="../Proyecto_Final_V2/pages/Contacto.html">Contacto</a></li>
-                <li><a href="">Ayuda</a></li>
-            </ul>
+        <!-- Inicio del menu navegable -->
+        <nav class="navbar navbar-expand-xl navbar-dark banner-rojo">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./imagenes/Logo_PP_V5.png" alt="UmbrellaTech"
+                        class="umbrellatech-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                    aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarDark">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Ofertas.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Outlet.html">Outlet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ayuda</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Cierre de logo + zona navegable -->
     <!-- Inicio Seccion 1 - Carrusel de Imagenes -->
     <section>
-        <img src="imagenes/Carrusel_Imagenes.jpg" alt="Imagen de Presentacion">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/cybermonday.webp" class="d-block w-75" alt="Cybermonday">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/celulares.webp" class="d-block w-75" alt="Celulares">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/computadoras.webp" class="d-block w-75" alt="Computadoras">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
     <!-- Inicio Seccion 2 - Informacion adicional - Son datos adicionales que presenta la pagina para el cliente -->
-    <section id="Informacion_adicional">
-        <img width="50" height="50" src="imagenes/Compra_Segura.webp" alt="Compra Segura">
-        <p>Compra Segura</p>
-        <img width="50" height="50" src="imagenes/Envio_Sin_Cargo.png" alt="Envio Sin Cargo">
-        <p>Envio Sin Cargo</p>
-        <img width="50" height="50" src="imagenes/Retiro_Sucursal.png" alt="Retiro Sucursal">
-        <p>Retiro Sucursal</p>
-        <img width="50" height="50" src="imagenes/Cuotas_sin_interes.png" alt="Cuotas Sin Interes">
-        <p>Cuotas Sin Interes</p>
-        <img width="50" height="50" src="imagenes/Descuento.png" alt="Descuentos en tu primer compra">
-        <p>Descuentos en tu primer compra</p>
+    <section class="informacion-adicional">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img width="50" height="50" src="imagenes/Compra_Segura.webp" alt="Compra Segura">
+                    <p>Compra Segura</p>
+                </div>
+                <div class="col">
+                    <img width="50" height="50" src="imagenes/Envio_Sin_Cargo.png" alt="Envio Sin Cargo">
+                    <p>Envio Sin Cargo</p>
+                </div>
+                <div class="col">
+                    <img width="50" height="50" src="imagenes/Retiro_Sucursal.png" alt="Retiro Sucursal">
+                    <p>Retiro Sucursal</p>
+                </div>
+                <div class="col">
+                    <img width="50" height="50" src="imagenes/Cuotas_sin_interes.png" alt="Cuotas Sin Interes">
+                    <p>Cuotas Sin Interes</p>
+                </div>
+                <div class="col">
+                    <img width="50" height="50" src="imagenes/Descuento.png" alt="Descuentos en tu primer compra">
+                    <p>Descuentos en tu primer compra</p>
+                </div>
+            </div>
+        </div>
     </section>
+
     <!-- Inicio Seccion 3 - "Los mas vendidos" - Se van a mostrar los productos mas vendidos en la pagina-->
-    <section id="Los_mas_vendidos">
-        <img width="500" height="300" src="" alt="Producto mas Vendido 1">
-        <img width="500" height="300" src="" alt="Producto mas Vendido 2">
-        <img width="500" height="300" src="" alt="Producto mas Vendido 3">
-        <img width="500" height="300" src="" alt="Producto mas Vendido 4">
-        <img width="500" height="300" src="" alt="Producto mas Vendido 5">
-        <img width="500" height="300" src="" alt="Producto mas Vendido 6">
+    <section class="los-mas-vendidos">
+        <h2>Los mas Vendidos</h2>
+        <div class="d-table-cell p-2 bd-highlight"> <img width="250" height="250"
+                src="./imagenes/producto_mas_vendido_1.jpg" alt="Producto mas Vendido 1"></div>
+        <div class="d-sm-table-cell p-2 bd-highlight"><img width="250" height="250"
+                src="./imagenes/producto_mas_vendido_2.jpg" alt="Producto mas Vendido 2"></div>
+        <div class="d-md-table-cell p-2 bd-highlight"><img width="250" height="250"
+                src="./imagenes/producto_mas_vendido_3.jpg" alt="Producto mas Vendido 3"></div>
+        <div class="d-lg-table-cell p-2 bd-highlight"><img width="250" height="250"
+                src="./imagenes/producto_mas_vendido_4.jpg" alt="Producto mas Vendido 4"></div>
+        <div class="d-xl-table-cell p-2 bd-highlight"><img width="250" height="250"
+                src="./imagenes/producto_mas_vendido_5.jpg" alt="Producto mas Vendido 5"></div>
+        <div class="d-xxl-table-cell p-2 bd-highlight"><img width="250" height="250"
+                src="./imagenes/producto_mas_vendido_6.jpg" alt="Producto mas Vendido 6"></div>
     </section>
     <!-- Inicio Seccion 4 - "Promociones Exclusivas" - Se va a mostrar un resumen de los productos en oferta-->
-    <section id="Promos_Exclusivas">
-        <img width="500" height="300" src="" alt="Producto Promo 1">
-        <img width="500" height="300" src="" alt="Producto Promo 2">
-        <img width="500" height="300" src="" alt="Producto Promo 3">
-        <img width="500" height="300" src="" alt="Producto Promo 4">
-        <img width="500" height="300" src="" alt="Producto Promo 5">
-        <img width="500" height="300" src="" alt="Producto Promo 6">
+    <section class="promos-exclusivas">
+        <h2>Promociones Exclusivas</h2>
+        <div class="d-table-cell p-2 bd-highlight"><img width="250" height="250" src="./imagenes/promo_1.jpg"
+                alt="Producto Promo 1"></div>
+        <div class="d-sm-table-cell p-2 bd-highlight"><img width="250" height="250" src="./imagenes/promo_2.jpg"
+                alt="Producto Promo 2"></div>
+        <div class="d-md-table-cell p-2 bd-highlight"><img width="250" height="250" src="./imagenes/promo_3.jpg"
+                alt="Producto Promo 3"></div>
+        <div class="d-lg-table-cell p-2 bd-highlight"><img width="250" height="250" src="./imagenes/promo_4.jpg"
+                alt="Producto Promo 4"></div>
+        <div class="d-xl-table-cell p-2 bd-highlight"><img width="250" height="250" src="./imagenes/promo_5.jpg"
+                alt="Producto Promo 5"></div>
+        <div class="d-xxl-table-cell p-2 bd-highlight"><img width="250" height="250" src="./imagenes/promo_6.jpg"
+                alt="Producto Promo 6"></div>
     </section>
+
     <!-- Inicio Seccion 5 - Medios de Comunicacion - Se van a incluir todos los metodos de comunicacion disponibles en la pagina -->
-    <section id="Trabaja">
-        <img width="50" height="50" src="imagenes/Telefonos.png" alt="Telefonos">
-        <p class="">Se va a incluir informacion de Telefonos de contacto</p>
-        <img width="50" height="50" src="imagenes/Mail.png" alt="Mail">
-        <p class="">Se va a incluir el mail de contacto de la empresa</p>
-        <img width="50" height="50" src="imagenes/Whatsapp.png" alt="Whatsapp">
-        <p class="">Se va a incluir el whatsapp de la empresa</p>
-        <img width="50" height="50" src="imagenes/Cambios.png" alt="Cambios y Devoluciones">
-        <p class="">Se va a incluir informacion detallada para cambios o devoluciones</p>
+    <section class="trabaja">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img width="50" height="50" src="imagenes/Telefonos.png" alt="Telefonos">
+                    <p class="">Se va a incluir informacion de Telefonos de contacto</p>
+                </div>
+                <div class="col">
+                    <img width="50" height="50" src="imagenes/Mail.png" alt="Mail">
+                    <p class="">Se va a incluir el mail de contacto de la empresa</p>
+                </div>
+                <div class="col">
+                    <img width="50" height="50" src="imagenes/Whatsapp.png" alt="Whatsapp">
+                    <p class="">Se va a incluir el whatsapp de la empresa</p>
+                </div>
+                <div class="col">
+                    <img width="50" height="50" src="imagenes/Cambios.png" alt="Cambios y Devoluciones">
+                    <p class="">Se va a incluir informacion detallada para cambios o devoluciones</p>
+                </div>
+            </div>
+        </div>
     </section>
+
     <!-- Inicio de Footer -->
     <!-- Informacion Redes Sociales -->
-    <footer id="Redes Sociales">
+    <footer class="redes-sociales">
         <h2>Unite a nuestras redes sociales</h2>
-        <!-- Acceso a red social de Instagram -->
-        <a href="https://www.instagram.com/" target="_blank">
-            <img width="100" height="80" src="Imagenes/Instagram_red_icon.png" alt="Logo_Instagram">
-        </a>
-        <!-- Acceso a red social de Facebook -->
-        <a href="https://www.facebook.com/" target="_blank">
-            <img width="100" height="80" src="Imagenes/Facebook_red_icon.png" alt="Logo_Facebook">
-        </a>
-        <!-- Acceso a red social de Youtube -->
-        <a href="https://www.youtube.com/" target="_blank">
-            <img width="100" height="80" src="Imagenes/Youtube_red_icon.jpg" alt="Logo_Youtube">
-        </a>
-        <!-- Acceso a red social de Twitter -->
-        <a href="https://twitter.com/" target="_blank">
-            <img width="100" height="80" src="Imagenes/twitter_red_icon.jpg" alt="Logo_Twitter">
-        </a>
+        <div class="container">
+            <div class="row">
+                <!-- Acceso a red social de Instagram -->
+
+                <div class="col">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img width="100" height="80" src="Imagenes/Instagram_red_icon.png" alt="Logo_Instagram">
+                    </a>
+                </div>
+                <!-- Acceso a red social de Facebook -->
+
+                <div class="col">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img width="100" height="80" src="Imagenes/Facebook_red_icon.png" alt="Logo_Facebook">
+                    </a>
+                </div>
+                <!-- Acceso a red social de Youtube -->
+
+                <div class="col">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img width="100" height="80" src="Imagenes/Youtube_red_icon.jpg" alt="Logo_Youtube">
+                    </a>
+                </div>
+                <!-- Acceso a red social de Twitter -->
+
+                <div class="col">
+                    <a href="https://twitter.com/" target="_blank">
+                        <img width="100" height="80" src="Imagenes/twitter_red_icon.jpg" alt="Logo_Twitter">
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>
