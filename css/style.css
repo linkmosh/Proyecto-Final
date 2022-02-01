@@ -23,15 +23,15 @@ p {
   font-weight: bold;
 }
 
+.informacion-adicional, .los-mas-vendidos,
+.promos-exclusivas, .trabaja, .redes-sociales {
+  margin-top: 5%;
+}
+
 footer p {
   color: #d4bebe;
   font-style: italic;
   font-weight: bold;
-}
-
-.informacion-adicional, .los-mas-vendidos,
-.promos-exclusivas, .trabaja, .redes-sociales {
-  margin-top: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */

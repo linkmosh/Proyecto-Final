@@ -1,3 +1,5 @@
+@import '../base/variables';
+
 * {
 	margin: 0;
 	padding: 0;
@@ -14,14 +16,9 @@
 	max-height: 50%;
    }
 p {
-	color: white;
+	color: $bg-color;
 	font-style: oblique;
     font-weight: bold;
-}
-footer p{
-	color: rgb(212, 190, 190);
-	font-style:italic;
-	font-weight: bold;
 }
 
 .informacion-adicional,.los-mas-vendidos,
