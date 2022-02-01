@@ -1,30 +1,37 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-.color-fondo-principal{
-	background-color: black;
-}
-.banner-rojo{
-	background-color: rgb(146, 5, 5);
-}
-.umbrellatech-logo {
-	max-width: 50%;
-	max-height: 50%;
-   }
-p {
-	color: white;
-	font-style: oblique;
-    font-weight: bold;
-}
-h2{
-	color: rgb(212, 190, 190);
-	font-style:italic;
-	font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.informacion-adicional,.los-mas-vendidos,
-.promos-exclusivas,.trabaja,.redes-sociales {
-	margin-top: 5%;
+.color-fondo-principal {
+  background-color: black;
 }
+
+.banner-rojo {
+  background-color: #920505;
+}
+
+.umbrellatech-logo {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+p {
+  color: white;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+footer p {
+  color: #d4bebe;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.informacion-adicional, .los-mas-vendidos,
+.promos-exclusivas, .trabaja, .redes-sociales {
+  margin-top: 5%;
+}
+
+/*# sourceMappingURL=style.css.map */
