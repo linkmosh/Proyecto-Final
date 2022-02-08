@@ -1,0 +1,16 @@
+/* mapas */
+$formato-inicial: (
+    text-color-initial: white,
+    font-family-initial: 'Franklin Gothic Medium',
+    font-weight-initial: bold,
+    font-size-initial: large,    
+);
+
+
+.opcion-menu {
+
+    color: map-get($formato-inicial, text-color-initial);
+    font-family: map-get($formato-inicial, font-family-initial);
+    font-weight: map-get($formato-inicial , font-weight-initial);
+    font-size: map-get($formato-inicial , font-size-initial );
+}

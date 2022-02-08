@@ -5,16 +5,40 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+
 .color-fondo-principal{
 	background-color: black;
 }
+
+
+// .menu-fixed {
+// 	position: fixed;
+// 	top: 0;
+// }
+
+
 .banner-rojo{
 	background-color: rgb(146, 5, 5);
 }
+
 .umbrellatech-logo {
 	max-width: 50%;
 	max-height: 50%;
    }
+
+ .carousel-inner .carousel-item img {
+	margin: 0 auto;
+  }
+
+ h1 {
+	padding: 10px;
+	border-bottom: 5px solid red;
+	color: red;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align:center;
+  }
+
 p {
 	color: $bg-color;
 	font-style: oblique;
@@ -22,6 +46,6 @@ p {
 }
 
 .informacion-adicional,.los-mas-vendidos,
-.promos-exclusivas,.trabaja,.redes-sociales {
+.promos-exclusivas,.comunicacion,.redes-sociales {
 	margin-top: 5%;
 }

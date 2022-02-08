@@ -1,3 +1,4 @@
+/*Variables*/
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,18 @@
   max-height: 50%;
 }
 
+.carousel-inner .carousel-item img {
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 10px;
+  border-bottom: 5px solid red;
+  color: red;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
 p {
   color: white;
   font-style: oblique;
@@ -24,7 +37,7 @@ p {
 }
 
 .informacion-adicional, .los-mas-vendidos,
-.promos-exclusivas, .trabaja, .redes-sociales {
+.promos-exclusivas, .comunicacion, .redes-sociales {
   margin-top: 5%;
 }
 
@@ -32,6 +45,43 @@ footer p {
   color: #d4bebe;
   font-style: italic;
   font-weight: bold;
+}
+
+/*Variables*/
+/* mapas */
+.opcion-menu {
+  color: white;
+  font-family: "Franklin Gothic Medium";
+  font-weight: bold;
+  font-size: large;
+}
+
+/*Extends*/
+/*Placeholders*/
+.redes-sociales, .comunicacion, .informacion-adicional {
+  text-align: center;
+  border: thick double #32a1ce;
+  border-radius: 2em;
+}
+
+.informacion-adicional {
+  background-color: #0099ff;
+}
+
+.comunicacion {
+  background-color: #ffae00;
+}
+
+.redes-sociales {
+  background-color: #ff0040;
+}
+
+/*Mixin*/
+h2 {
+  padding: 10px;
+  border-bottom: 5px solid red;
+  color: red;
+  font-family: "fantasy";
 }
 
 /*# sourceMappingURL=style.css.map */

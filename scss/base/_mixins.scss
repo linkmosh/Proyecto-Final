@@ -1,0 +1,12 @@
+/*Mixin*/
+@mixin titulos($relleno, $border, $color,$font-family){
+    padding: $relleno;
+    border-bottom: $border;
+    color: $color;
+    font-family: $font-family;
+    }
+    
+    h2 {
+        @include titulos(10px ,5px solid red, red,'fantasy');
+    }
+    
