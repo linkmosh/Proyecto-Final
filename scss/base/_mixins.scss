@@ -6,7 +6,7 @@
     font-family: $font-family;
     }
     
-    h2 {
+   .los-mas-vendidos h2, .promos-exclusivas h2 {
         @include titulos(10px ,5px solid red, red,'fantasy');
     }
     

@@ -5,22 +5,28 @@
   box-sizing: border-box;
 }
 
+/* Color del fondo de todas las paginas */
 .color-fondo-principal {
   background-color: black;
 }
 
+/* Color de la seccion Menu */
 .banner-rojo {
   background-color: #920505;
 }
 
+/*Logo general de todas las paginas  */
 .umbrellatech-logo {
   max-width: 50%;
   max-height: 50%;
 }
 
+/* Ajuste del Carousel */
 .carousel-inner .carousel-item img {
   margin: 0 auto;
 }
+
+/* Formato de los titulos H1 */
 
 h1 {
   padding: 10px;
@@ -30,17 +36,121 @@ h1 {
   text-align: center;
 }
 
+
+/* Flexbox generado en la pagina de "Contacto" y "Servicios" */
+
+.sectionFlex, .contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 500px;
+  border: 1px solid black;
+  width: 100%;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+/* Ajuste del flexbox utilizado en el texto de la pagina "Servicios" */
+.sectionFlex p{
+  color: whitesmoke;
+  background-color: #0f0f0b;
+  width: 30%;
+  padding: 50px 30px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+/* Ajustes sobre los titulos H2 de las paginas "Servicios" y "Contacto" */
+
+.sectionFlex h2, .contacto h2 {
+  color: #720c14;
+  width: 50%;
+  padding: 0px;
+  margin: 25px;
+}
+
+/* Ajuste del texto ingresado en la seccion "Contactos" */
+
+.contacto p{
+  color: whitesmoke;
+  /* background-color: #0f0f0b; */
+  width: 20%;
+  height: 40%;
+  padding: 1em;
+  margin: 0px;
+  font-family:'Courier New', Courier, monospace;
+}
+.contacto span {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Formato de titulos H2 para todas las paginas */
+
+h2 {
+  color: #720c14;
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Ajuste de Tamaño del mapa en la pagina de "Contacto" */
+
+.contacto iframe {
+  width: 50%;
+  height: 70%;
+}
+
+/* Ajuste de tamaño de las imagenes de la seccion "Servicios" */
+
+.sectionFlex img {
+  width: 50%;
+}
+
+/* Inicio de Flexbox de Ofertas, Outlet y Productos*/
+
+.flex-fila1, .flex-fila2, .flex-fila3, .flex-fila4{
+  display: flex;       
+  flex-flow: row wrap;
+  justify-content:space-evenly; 
+  padding: 5% 5%;
+}
+.item-flex {
+  display: flex;
+  flex-flow: column;
+  border-color: white;
+  border-width: 2em;
+  border-radius: 2em;
+  border-style: double;
+}
+.item-flex img{
+  order: -1;     
+  align-self: center;
+  width: 10em;
+  height: 10em;
+}
+.item-flex button{
+  margin-top: auto;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Formato general de los textos en las paginas */
+
 p {
   color: white;
   font-style: oblique;
   font-weight: bold;
 }
 
+/* Ajuste de margenes de las secciones de la pagina principal */
+
 .informacion-adicional, .los-mas-vendidos,
 .promos-exclusivas, .comunicacion, .redes-sociales {
   margin-top: 5%;
 }
 
+/* Formato del Footer de la pagina principal */
 footer p {
   color: #d4bebe;
   font-style: italic;
@@ -77,7 +187,7 @@ footer p {
 }
 
 /*Mixin*/
-h2 {
+.los-mas-vendidos h2, .promos-exclusivas h2 {
   padding: 10px;
   border-bottom: 5px solid red;
   color: red;

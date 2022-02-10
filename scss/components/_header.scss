@@ -39,6 +39,39 @@
 	text-align:center;
   }
 
+.sectionFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 500px;
+    border: 1px solid black;
+    width: 100%;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.sectionFlex p {
+    color: whitesmoke;
+    background-color: rgb(15, 15, 11);
+    width:30%;
+    padding: 50px 30px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.sectionFlex h2 {
+    color: rgb(114, 12, 20);
+    width: 50%;
+    padding: 0px;
+    margin: 25px;
+}
+
+.sectionFlex img {
+	width: 50%;
+}
+
+
 p {
 	color: $bg-color;
 	font-style: oblique;
