@@ -116,31 +116,56 @@ h2 {
   justify-content:space-evenly; 
   padding: 5% 5%;
 }
-.item-flex {
+.item-flex:hover {
   display: flex;
   flex-flow: column;
   border-color: white;
-  border-width: 2em;
-  border-radius: 2em;
-  border-style: double;
+  border-width: 1em;
+  border-radius: 1em;
+  margin:0;
+  transform: scale(1.1);
+  transition: all 1s;
+  width: auto;
+  height: auto;
+  box-shadow: 1px 1px 10px 20px rgba(158,22,40,1);
+  background-color: rgb(178, 195, 207);
 }
 .item-flex img{
   order: -1;     
   align-self: center;
-  width: 10em;
-  height: 10em;
+  width: 12em;
+  height: 12em;
 }
 .item-flex button{
-  margin-top: auto;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* margin-top: auto; */
+  margin: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  padding: 5px;
+  background-color: #ad3333;
+  border-radius: 50px;
+  border-style: inset ;
+  border-color: #0f0f0b;
+  align-self: center;
 }
 
 /* Formato general de los textos en las paginas */
+
+.item-flex p {
+  color: red;
+  font-style: oblique;
+  font-weight: bold;
+  text-align:start;
+  margin: auto;
+}
+
 
 p {
   color: white;
   font-style: oblique;
   font-weight: bold;
+  text-align:start;
+  margin: auto;
 }
 
 /* Ajuste de margenes de las secciones de la pagina principal */
