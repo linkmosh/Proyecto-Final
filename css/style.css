@@ -71,10 +71,10 @@ h1 {
 .descuentos-especiales,
 .promos-exclusivas {
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
+  flex-flow: nowrap;
   justify-content: space-around;
-  animation-duration: 4s;
-  animation-name: slide-product;
+  justify-items:center;
 }
 
 .desc-esp-titulo {
@@ -85,9 +85,6 @@ h1 {
 }
 
 .desc-esp-flex {
-  /* border: 1px solid red;
-  border-width: 0.5em;
-  border-radius: 2em;*/
   display: flex;
   flex-flow: column;
   border-color: white;
@@ -96,8 +93,8 @@ h1 {
   margin: 0;
   transform: scale(1.1);
   transition: all 1s;
-  width: auto;
-  height: auto;
+  width: 10em;
+  height: 10em;
   box-shadow: 1px 1px 10px 20px rgba(158, 22, 40, 1);
   background-color: rgb(178, 195, 207);
 }
@@ -276,20 +273,20 @@ footer p {
 .comunicacion,
 .informacion-adicional {
   text-align: center;
-  border: thick double #32a1ce;
+  /* border: thick double #f5fbfd; */
   border-radius: 2em;
 }
 
 .informacion-adicional {
-  background-color: #0099ff;
+  background-color: #2c098b;
+}
+
+.informacion-adicional p, .comunicacion p {
+  text-align: center;
 }
 
 .comunicacion {
   background-color: #ffae00;
-}
-
-.redes-sociales {
-  background-color: #ff0040;
 }
 
 /*Mixin*/
