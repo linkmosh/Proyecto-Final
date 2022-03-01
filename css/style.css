@@ -15,8 +15,11 @@
   background-color: #920505;
 }
 
+
 /*Logo general de todas las paginas  */
 .umbrellatech-logo {
+  display: flex;
+  text-align: left;
   max-width: 50%;
   max-height: 50%;
 }
@@ -26,20 +29,85 @@
   margin: 0 auto;
 }
 
+
+
 /* Formato de los titulos H1 */
 
 h1 {
   padding: 10px;
-  border-bottom: 5px solid red;
   color: red;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  font: italic bold 50px Georgia, Serif;
   text-align: center;
+  animation-duration: 3s;
+  animation-name: slide-titulo;
+  animation-iteration-count:infinite;
 }
+
+@keyframes slide-titulo {
+  0% {
+    color: rgb(0, 139, 19);
+    border-bottom: 5px solid rgb(0, 139, 19);
+  }
+
+  25% {
+    color: rgb(0, 76, 139);
+    border-bottom: 5px solid rgb(0, 76, 139);
+  }
+
+  50% {
+    color: rgb(139, 0, 132);
+    border-bottom: 5px solid rgb(139, 0, 132);
+  }
+
+  100% {
+    color: rgb(139, 0, 0);
+    border-bottom: 5px solid rgb(139, 0, 0);
+  }
+}
+
+/* Seccion 3 del Index - Flexbox de Descuentos Especiales */
+
+.descuentos-especiales,
+.promos-exclusivas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  animation-duration: 4s;
+  animation-name: slide-product;
+}
+
+.desc-esp-titulo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  text-align: start;
+}
+
+.desc-esp-flex {
+  /* border: 1px solid red;
+  border-width: 0.5em;
+  border-radius: 2em;*/
+  display: flex;
+  flex-flow: column;
+  border-color: white;
+  border-width: 1em;
+  border-radius: 1em;
+  margin: 0;
+  transform: scale(1.1);
+  transition: all 1s;
+  width: auto;
+  height: auto;
+  box-shadow: 1px 1px 10px 20px rgba(158, 22, 40, 1);
+  background-color: rgb(178, 195, 207);
+}
+
 
 
 /* Flexbox generado en la pagina de "Contacto" y "Servicios" */
 
-.sectionFlex, .contacto {
+.sectionFlex,
+.contacto {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -52,19 +120,20 @@ h1 {
 }
 
 /* Ajuste del flexbox utilizado en el texto de la pagina "Servicios" */
-.sectionFlex p{
+.sectionFlex p {
   color: whitesmoke;
   background-color: #0f0f0b;
   width: 30%;
   padding: 50px 30px;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  
+
 }
 
 /* Ajustes sobre los titulos H2 de las paginas "Servicios" y "Contacto" */
 
-.sectionFlex h2, .contacto h2 {
+.sectionFlex h2,
+.contacto h2 {
   color: #720c14;
   width: 50%;
   padding: 0px;
@@ -73,17 +142,18 @@ h1 {
 
 /* Ajuste del texto ingresado en la seccion "Contactos" */
 
-.contacto p{
+.contacto p {
   color: whitesmoke;
   /* background-color: #0f0f0b; */
   width: 20%;
   height: 40%;
   padding: 1em;
   margin: 0px;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
+
 .contacto span {
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Formato de titulos H2 para todas las paginas */
@@ -110,33 +180,39 @@ h2 {
 
 /* Inicio de Flexbox de Ofertas, Outlet y Productos*/
 
-.flex-fila1, .flex-fila2, .flex-fila3, .flex-fila4{
-  display: flex;       
+.flex-fila1,
+.flex-fila2,
+.flex-fila3,
+.flex-fila4 {
+  display: flex;
   flex-flow: row wrap;
-  justify-content:space-evenly; 
+  justify-content: space-evenly;
   padding: 5% 5%;
 }
+
 .item-flex:hover {
   display: flex;
   flex-flow: column;
   border-color: white;
   border-width: 1em;
   border-radius: 1em;
-  margin:0;
+  margin: 0;
   transform: scale(1.1);
   transition: all 1s;
   width: auto;
   height: auto;
-  box-shadow: 1px 1px 10px 20px rgba(158,22,40,1);
+  box-shadow: 1px 1px 10px 20px rgba(158, 22, 40, 1);
   background-color: rgb(178, 195, 207);
 }
-.item-flex img{
-  order: -1;     
+
+.item-flex img {
+  order: -1;
   align-self: center;
   width: 12em;
   height: 12em;
 }
-.item-flex button{
+
+.item-flex button {
   /* margin-top: auto; */
   margin: 1em;
   font-family: Arial, Helvetica, sans-serif;
@@ -144,7 +220,7 @@ h2 {
   padding: 5px;
   background-color: #ad3333;
   border-radius: 50px;
-  border-style: inset ;
+  border-style: inset;
   border-color: #0f0f0b;
   align-self: center;
 }
@@ -155,7 +231,7 @@ h2 {
   color: red;
   font-style: oblique;
   font-weight: bold;
-  text-align:start;
+  text-align: start;
   margin: auto;
 }
 
@@ -164,14 +240,17 @@ p {
   color: white;
   font-style: oblique;
   font-weight: bold;
-  text-align:start;
+  text-align: start;
   margin: auto;
 }
 
 /* Ajuste de margenes de las secciones de la pagina principal */
 
-.informacion-adicional, .los-mas-vendidos,
-.promos-exclusivas, .comunicacion, .redes-sociales {
+.informacion-adicional,
+.descuentos-especiales,
+.promos-exclusivas,
+.comunicacion,
+.redes-sociales {
   margin-top: 5%;
 }
 
@@ -193,7 +272,9 @@ footer p {
 
 /*Extends*/
 /*Placeholders*/
-.redes-sociales, .comunicacion, .informacion-adicional {
+.redes-sociales,
+.comunicacion,
+.informacion-adicional {
   text-align: center;
   border: thick double #32a1ce;
   border-radius: 2em;
@@ -212,7 +293,8 @@ footer p {
 }
 
 /*Mixin*/
-.los-mas-vendidos h2, .promos-exclusivas h2 {
+.descuentos-especiales h2,
+.promos-exclusivas h2 {
   padding: 10px;
   border-bottom: 5px solid red;
   color: red;
