@@ -1,5 +1,5 @@
 {
-  "name": "proyecto_final_v2",
+  "name": "proyecto-final",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,13 +9,13 @@
     "type": "git",
     "url": "git+https://github.com/linkmosh/Proyecto-Final.git"
   },
-  "author": "",
+  "author": "apaz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/linkmosh/Proyecto-Final/issues"
   },
   "homepage": "https://github.com/linkmosh/Proyecto-Final#readme",
-  "description": "",
+  "description": "package generado para incluir cambios en el proyecto final de desarrollo web",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
