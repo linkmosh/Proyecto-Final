@@ -293,12 +293,14 @@ footer p {
 }
 
 /*Mixin*/
-.descuentos-especiales h2,
-.promos-exclusivas h2 {
-  padding: 10px;
+.subtitulo-index,
+.subtitulo-index {
+  padding-top: 2em;
+  padding-bottom:0em;
   border-bottom: 5px solid red;
-  color: red;
+  color: rgb(245, 235, 235);
   font-family: "fantasy";
+  width: 22%;
 }
 
 /*# sourceMappingURL=style.css.map */
